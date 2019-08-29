@@ -1,2 +1,2 @@
-# SteinthorSvavars-Vef1.github.io
+# SteinthorSvavars.github.io
 Verkefni
