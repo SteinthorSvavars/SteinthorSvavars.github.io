@@ -262,6 +262,9 @@ Viðmið - breakpoints 48em = 760px +
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0 auto;
   }
+  .img .video {
+    max-width: 25%;
+    height: auto;
 }
 
 
@@ -271,26 +274,47 @@ Viðmið - breakpoints 60em = 960px +
 
 @media screen and (min-width: 60em) { 
   /* kóði sem yfirritar fyrri skipanir og nýjar skipanir sem eiga við 60em skjástærð */  
-main {
-  grid-template-areas: 'vinstri midja haegri';
-  grid-template-columns: 1fr 3fr 1fr;
+  .container {
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .col-2 {
+    display: grid;
+    grid-template-areas: 1fr 1fr 1fr;
+  }
+  .col-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .gap-2 {
+    grid-gap: 1em;
+  }
+  .footcol-3 {
+    display: grid;
+    grid-template-columns: 2fr 1.4fr 1fr;
+  }
+  .myndabox {
+    width: 648px;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+  }
+  .img .video {
+    max-width: 25%;
+    height: auto;
+  }
 }
-body {
-  max-width: 60em;
-  margin: 0 auto;
-
-}
-}
-
 
 /* ========================================
 Viðmið - breakpoints 80em = 1280px +
 ======================================== */
 
 @media screen and (min-width: 80em) { 
-  /* kóði sem yfirritar fyrri skipanir og nýjar skipanir sem eiga við 80em skjástærð */  
-body {
-  max-width: 80em;
-  margin: 0 auto;
-}
+/* kóði sem yfirritar fyrri skipanir og nýjar skipanir sem eiga við 80em skjástærð */  
+  body {
+    max-width: 80em;
+    margin: 0 auto;
+  }
 }

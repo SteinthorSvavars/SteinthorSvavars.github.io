@@ -115,3 +115,25 @@ blockquote {
 .maginb {
     margin: .5em 0 --1em 0;
 }
+@media screen and (min-width: 60em) { 
+.container {
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .col-2 {
+    display: grid;
+    grid-template-areas: 1fr 1fr 1fr;
+  }
+  .col-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .gap-2 {
+    grid-gap: 1em;
+  }
+  .footcol-3 {
+    display: grid;
+    grid-template-columns: 2fr 1.4fr 1fr;
+  }
+}
