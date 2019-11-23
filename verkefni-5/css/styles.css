@@ -99,6 +99,9 @@ blockquote {
     width: 480px;
     height: 270px;
   }
+.flrightimg {
+    object-fit: contain;
+}
 /* grid */
 .col-2 {
     display: grid;
