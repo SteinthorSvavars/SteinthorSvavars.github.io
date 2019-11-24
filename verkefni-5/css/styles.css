@@ -33,47 +33,12 @@ h1 {
 .topnav a {
     padding-left: 2em;
 }
-.footer {
-    padding: 8px;
-    margin: 8px;
-}
-.footnav {
-    padding: 0;
-}
-.footnav li {
-    list-style-type: none;
-    line-height: 2;
-}
 .innermenu {
     display: flex;
     flex-flow: row;
     justify-content: center;
     padding: 2em;
     margin: 2em;
-}
-.innermenu a {
-    background-color: darkblue;
-    color: white;
-    display: block;
-    margin: 0;
-    padding: 5px;
-    border: blue;
-}
-.innermenu a:hover,
-.innermenu a:active {
-    color: black;
-    background-color: rgb(240, 202, 152);
-}
-.innermenu a:last-child {
-    border: 0;
-}
-blockquote {
-    background-color: rgba(255,255,255, .7);
-    padding: 1em;
-}
-.bgcolor {
-    background-image: linear-gradient(navajowhite,oldlace );
-    padding: 1em;
 }
 .container {
     max-width: 60em; /*960px = fartölvur*/
@@ -148,8 +113,10 @@ blockquote {
     grid-gap: 0;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    'flrightA flleftA'
-    'flrightB flleftB';
+    'flrightA'
+    'flleftA'
+    'flrightB'
+    'flleftB';
   }
 }
 @media screen and (min-width: 60em){ 
