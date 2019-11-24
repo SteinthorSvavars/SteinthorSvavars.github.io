@@ -1,4 +1,6 @@
-* { box-sizing: border-box }
+*, *:before, *:after {
+  box-sizing: border-box; 
+}
 
 body {
     margin: 0; /* tek út sjálgefið 10px margin */
@@ -98,9 +100,6 @@ blockquote {
 .gluggi {
     width: 480px;
     height: 270px;
-  }
-.flrightimg {
-    object-fit: contain;
 }
 /* grid */
 .col-2 {
@@ -112,13 +111,62 @@ blockquote {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.col-4 {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-}
+
 .gap-4 {
     grid-gap: 4em
 }
 .maginb {
     margin: .5em 0 --1em 0;
 }
+
+
+@media screen and (min-width: 30em){
+
+}
+
+@media screen and (min-width: 37.5em){
+
+}
+  
+@media screen and (min-width: 48em){ 
+  .col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .gap-4 {
+    grid-gap: 4em
+  }
+  .maginb {
+    margin: .5em 0 --1em 0;
+  }
+  main {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'flrightA flleftA'
+    'flrightB flleftB';
+  }
+}
+@media screen and (min-width: 60em){ 
+  .col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .gap-4 {
+    grid-gap: 4em
+  }
+  .maginb {
+    margin: .5em 0 --1em 0;
+  }
+}
+  
+@media screen and (min-width: 80em){}
